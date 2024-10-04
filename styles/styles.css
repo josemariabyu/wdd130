@@ -1,13 +1,12 @@
-nav a {
-  color: white
+nav a { 
+  color: white; /* Added missing semicolon */
   padding: 10px;
   display: block;
 }
 
 h1 {
-  color: steelblue
+  color: steelblue; /* Added missing semicolon */
 }
-
 
 aside {
   width: 20em;
@@ -17,17 +16,18 @@ aside {
   background-color: #eee;
   color: #333;
 }
+
 aside img {
   width: 200px;
   margin: 1em;
-  border: 1px solid rgba(0, 0, 0, 0,2); /
-  padding: 1em
-  background-color: #eee
-  color: #333
-  text align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Corrected alpha value and removed stray '/' */
+  padding: 1em; /* Added missing semicolon */
+  background-color: #eee; /* Added missing semicolon */
+  color: #333; /* Added missing semicolon */
+  text-align: center; /* Corrected property name */
   height: auto;
-
 }
+
 main img {
   width: 150px;
   height: auto;
