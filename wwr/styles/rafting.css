@@ -1,0 +1,198 @@
+/* rafting.css */
+
+/* CSS Variables */
+:root {
+  --primary-color: #1E90FF; /* Dodger Blue */
+  --secondary-color: #00BFFF; /* Deep Sky Blue */
+  --accent1-color: #87CEFA; /* Light Sky Blue */
+  --accent2-color: #4682B4; /* Steel Blue */
+  --font-heading: 'Roboto', sans-serif;
+  --font-body: 'Merriweather', serif;
+}
+
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--primary-color);
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+nav a:hover {
+  background-color: var(--accent1-color);
+  border-radius: 5px;
+}
+
+/* Logo Styles */
+#logo {
+  width: 150px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-heading);
+  font-size: 3em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Article Styles */
+article {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+}
+
+.client-image {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+/* Sections Styles */
+section {
+  margin: 40px 0;
+}
+
+section h2 {
+  font-family: var(--font-heading);
+  color: var(--accent2-color);
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+section p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Adventure Gallery Styles */
+.adventure-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.adventure-gallery img {
+  width: calc(20% - 10px);
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.adventure-gallery img:hover {
+    transform: scale(1.05);
+}   
+
+/* Footer Styles */
+footer {
+  margin-top: 40px;
+  border-top: 1px solid var(--secondary-color);
+  padding-top: 20px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+footer p {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+footer a img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+footer a img:hover {
+  transform: scale(1.1);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+        padding: 10px;
+    }
+
+    article {
+        position: static;
+        background-color: rgba(255, 255, 255, 1);
+        margin-top: 20px;
+    }
+
+    .adventure-gallery img {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .adventure-gallery img {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
