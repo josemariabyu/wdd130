@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafting Adventures</title>
+    <link rel="stylesheet" href="rafting.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Replace the fonts below with your chosen fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img id="logo" src="images/logo.png" alt="Rafting Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="images/hero-image.jpg" alt="Rafting Adventure" class="hero-image">
+        <h1 class="hero-heading">Experience the Ultimate Whitewater Adventure</h1>
+    </div>
+
+    <!-- Newsletter Sign-Up Section -->
+    <section class="newsletter-signup">
+        <h2>Sign Up for Our Newsletter</h2>
+        <form action="subscribe.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="call-to-action">
+        <h2>Ready for Adventure?</h2>
+        <p>Explore our trips to experience thrilling whitewater rafting.</p>
+        <a href="trips.html" class="cta-button"><button>See our Trips</button></a>
+    </section>
+
+    <!-- Why Choose Us (Grid Section) -->
+    <section class="site-purpose">
+        <h2>Why Choose Us?</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="images/rafting-experience.jpg" alt="Rafting Experience">
+                <p>We offer unforgettable rafting adventures with experienced guides.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/rafting-river.jpg" alt="Rafting River">
+                <p>Experience the best rivers with top-quality safety equipment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-icons">
+            <img src="images/facebook-icon.png" alt="Facebook">
+            <img src="images/instagram-icon.png" alt="Instagram">
+            <img src="images/twitter-icon.png" alt="Twitter">
+        </div>
+        <p>&copy; 2024 Rafting Adventures. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
